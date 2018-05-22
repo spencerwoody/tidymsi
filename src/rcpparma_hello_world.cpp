@@ -50,3 +50,19 @@ Rcpp::List rcpparma_bothproducts(const arma::colvec & x) {
     return Rcpp::List::create(Rcpp::Named("outer")=op,
                               Rcpp::Named("inner")=ip);
 }
+
+// My own stuff
+
+//' Blah
+//' 
+//' This function is a default
+//'
+//' @param x A vector
+//' @export
+// [[Rcpp::export]]
+double rcpparma_myfun(const arma::colvec & x) {
+  double v = arma::as_scalar(x.t() * x);
+  return v;
+}
+
+

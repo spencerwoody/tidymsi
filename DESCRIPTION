@@ -1,11 +1,11 @@
 Package: tidymsi
 Type: Package
-Title: What the package does (short line)
+Title: Tidy, efficient MSI preprocessing
 Version: 1.0
 Date: 2018-05-21
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Author: Spencer Woody
+Maintainer: Spencer Woody <spencer.woody@utexas.edu>
 Description: More about what it does (maybe more than one line)
-License: What license is it under?
+License: GPLv3
 Imports: Rcpp (>= 0.12.17)
 LinkingTo: Rcpp, RcppArmadillo

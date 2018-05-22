@@ -49,12 +49,24 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// rcpparma_myfun
+double rcpparma_myfun(const arma::colvec& x);
+RcppExport SEXP _tidymsi_rcpparma_myfun(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::colvec& >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(rcpparma_myfun(x));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_tidymsi_rcpparma_hello_world", (DL_FUNC) &_tidymsi_rcpparma_hello_world, 0},
     {"_tidymsi_rcpparma_outerproduct", (DL_FUNC) &_tidymsi_rcpparma_outerproduct, 1},
     {"_tidymsi_rcpparma_innerproduct", (DL_FUNC) &_tidymsi_rcpparma_innerproduct, 1},
     {"_tidymsi_rcpparma_bothproducts", (DL_FUNC) &_tidymsi_rcpparma_bothproducts, 1},
+    {"_tidymsi_rcpparma_myfun", (DL_FUNC) &_tidymsi_rcpparma_myfun, 1},
     {NULL, NULL, 0}
 };
 

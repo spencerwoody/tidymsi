@@ -17,3 +17,13 @@ rcpparma_bothproducts <- function(x) {
     .Call(`_tidymsi_rcpparma_bothproducts`, x)
 }
 
+#' Blah
+#' 
+#' This function is a default
+#'
+#' @param x A vector
+#' @export
+rcpparma_myfun <- function(x) {
+    .Call(`_tidymsi_rcpparma_myfun`, x)
+}
+
