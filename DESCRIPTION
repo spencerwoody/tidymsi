@@ -9,3 +9,4 @@ Description: More about what it does (maybe more than one line)
 License: GPLv3
 Imports: Rcpp (>= 0.12.17)
 LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.0.1
