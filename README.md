@@ -16,5 +16,5 @@ devtools::install_github("spencerwoody/tidymsi")
 Feedback is welcome.
 
 Spencer Woody  
-`spencer.woody@utexas.edu`  
-[`spencerwoody.github.io`](https://spencerwoody.github.io/)
+Email: `spencer.woody@utexas.edu`  
+Personal site: [`spencerwoody.github.io`](https://spencerwoody.github.io/)
