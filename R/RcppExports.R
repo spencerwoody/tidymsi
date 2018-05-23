@@ -27,3 +27,7 @@ rcpparma_myfun <- function(x) {
     .Call(`_tidymsi_rcpparma_myfun`, x)
 }
 
+mychar <- function(x) {
+    .Call(`_tidymsi_mychar`, x)
+}
+

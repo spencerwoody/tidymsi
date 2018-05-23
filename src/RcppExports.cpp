@@ -60,6 +60,17 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// mychar
+std::string mychar(int x);
+RcppExport SEXP _tidymsi_mychar(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(mychar(x));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_tidymsi_rcpparma_hello_world", (DL_FUNC) &_tidymsi_rcpparma_hello_world, 0},
@@ -67,6 +78,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"_tidymsi_rcpparma_innerproduct", (DL_FUNC) &_tidymsi_rcpparma_innerproduct, 1},
     {"_tidymsi_rcpparma_bothproducts", (DL_FUNC) &_tidymsi_rcpparma_bothproducts, 1},
     {"_tidymsi_rcpparma_myfun", (DL_FUNC) &_tidymsi_rcpparma_myfun, 1},
+    {"_tidymsi_mychar", (DL_FUNC) &_tidymsi_mychar, 1},
     {NULL, NULL, 0}
 };
 

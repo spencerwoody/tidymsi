@@ -65,4 +65,13 @@ double rcpparma_myfun(const arma::colvec & x) {
   return v;
 }
 
+// [[Rcpp::export]]
+std::string mychar(int x) {
+  int y = x;
+  std::string ch = "hello";
+  return ch;
+}
+
+
+
 
