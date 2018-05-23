@@ -3,6 +3,10 @@
 src/*.o
 src/*.so
 
+##
+*.Rproj
+.Rproj*
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
