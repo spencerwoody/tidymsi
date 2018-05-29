@@ -6,6 +6,166 @@
 
 using namespace Rcpp;
 
+// countNonzeroColsArma
+Rcpp::IntegerVector countNonzeroColsArma(arma::mat mat);
+RcppExport SEXP _tidymsi_countNonzeroColsArma(SEXP matSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::mat >::type mat(matSEXP);
+    rcpp_result_gen = Rcpp::wrap(countNonzeroColsArma(mat));
+    return rcpp_result_gen;
+END_RCPP
+}
+// countNonzeroCols
+IntegerVector countNonzeroCols(NumericMatrix mat);
+RcppExport SEXP _tidymsi_countNonzeroCols(SEXP matSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type mat(matSEXP);
+    rcpp_result_gen = Rcpp::wrap(countNonzeroCols(mat));
+    return rcpp_result_gen;
+END_RCPP
+}
+// colMediansC
+NumericVector colMediansC(NumericMatrix x);
+RcppExport SEXP _tidymsi_colMediansC(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(colMediansC(x));
+    return rcpp_result_gen;
+END_RCPP
+}
+// rowMeansC
+NumericVector rowMeansC(NumericMatrix x);
+RcppExport SEXP _tidymsi_rowMeansC(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(rowMeansC(x));
+    return rcpp_result_gen;
+END_RCPP
+}
+// normalizeTIC
+List normalizeTIC(NumericMatrix& dataMatrix);
+RcppExport SEXP _tidymsi_normalizeTIC(SEXP dataMatrixSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix& >::type dataMatrix(dataMatrixSEXP);
+    rcpp_result_gen = Rcpp::wrap(normalizeTIC(dataMatrix));
+    return rcpp_result_gen;
+END_RCPP
+}
+// nonzeroMedianC
+double nonzeroMedianC(NumericVector x);
+RcppExport SEXP _tidymsi_nonzeroMedianC(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(nonzeroMedianC(x));
+    return rcpp_result_gen;
+END_RCPP
+}
+// rowNonzeroMediansC
+NumericVector rowNonzeroMediansC(NumericMatrix& x);
+RcppExport SEXP _tidymsi_rowNonzeroMediansC(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix& >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(rowNonzeroMediansC(x));
+    return rcpp_result_gen;
+END_RCPP
+}
+// normalizeNonzeroMedian
+List normalizeNonzeroMedian(NumericMatrix& dataMatrix);
+RcppExport SEXP _tidymsi_normalizeNonzeroMedian(SEXP dataMatrixSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix& >::type dataMatrix(dataMatrixSEXP);
+    rcpp_result_gen = Rcpp::wrap(normalizeNonzeroMedian(dataMatrix));
+    return rcpp_result_gen;
+END_RCPP
+}
+// rowMFCsC
+NumericVector rowMFCsC(NumericMatrix dataMatrix, NumericVector refSpec);
+RcppExport SEXP _tidymsi_rowMFCsC(SEXP dataMatrixSEXP, SEXP refSpecSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type dataMatrix(dataMatrixSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type refSpec(refSpecSEXP);
+    rcpp_result_gen = Rcpp::wrap(rowMFCsC(dataMatrix, refSpec));
+    return rcpp_result_gen;
+END_RCPP
+}
+// rowMFCsC_nonzero
+NumericVector rowMFCsC_nonzero(NumericMatrix dataMatrix, NumericVector refSpec);
+RcppExport SEXP _tidymsi_rowMFCsC_nonzero(SEXP dataMatrixSEXP, SEXP refSpecSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type dataMatrix(dataMatrixSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type refSpec(refSpecSEXP);
+    rcpp_result_gen = Rcpp::wrap(rowMFCsC_nonzero(dataMatrix, refSpec));
+    return rcpp_result_gen;
+END_RCPP
+}
+// normalizeMFC_nonzero
+List normalizeMFC_nonzero(NumericMatrix dataMatrix, NumericVector refSpec);
+RcppExport SEXP _tidymsi_normalizeMFC_nonzero(SEXP dataMatrixSEXP, SEXP refSpecSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type dataMatrix(dataMatrixSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type refSpec(refSpecSEXP);
+    rcpp_result_gen = Rcpp::wrap(normalizeMFC_nonzero(dataMatrix, refSpec));
+    return rcpp_result_gen;
+END_RCPP
+}
+// intersampleNormTIC
+List intersampleNormTIC(NumericMatrix dataNormPixel, IntegerVector sampleFirstIndices);
+RcppExport SEXP _tidymsi_intersampleNormTIC(SEXP dataNormPixelSEXP, SEXP sampleFirstIndicesSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type dataNormPixel(dataNormPixelSEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type sampleFirstIndices(sampleFirstIndicesSEXP);
+    rcpp_result_gen = Rcpp::wrap(intersampleNormTIC(dataNormPixel, sampleFirstIndices));
+    return rcpp_result_gen;
+END_RCPP
+}
+// intersampleNormMedian
+List intersampleNormMedian(NumericMatrix dataNormPixel, IntegerVector sampleFirstIndices);
+RcppExport SEXP _tidymsi_intersampleNormMedian(SEXP dataNormPixelSEXP, SEXP sampleFirstIndicesSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type dataNormPixel(dataNormPixelSEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type sampleFirstIndices(sampleFirstIndicesSEXP);
+    rcpp_result_gen = Rcpp::wrap(intersampleNormMedian(dataNormPixel, sampleFirstIndices));
+    return rcpp_result_gen;
+END_RCPP
+}
+// intersampleNormMFC
+List intersampleNormMFC(NumericMatrix x, IntegerVector sampleFirstIndices);
+RcppExport SEXP _tidymsi_intersampleNormMFC(SEXP xSEXP, SEXP sampleFirstIndicesSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type x(xSEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type sampleFirstIndices(sampleFirstIndicesSEXP);
+    rcpp_result_gen = Rcpp::wrap(intersampleNormMFC(x, sampleFirstIndices));
+    return rcpp_result_gen;
+END_RCPP
+}
 // rcpparma_hello_world
 arma::mat rcpparma_hello_world();
 RcppExport SEXP _tidymsi_rcpparma_hello_world() {
@@ -73,6 +233,20 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_tidymsi_countNonzeroColsArma", (DL_FUNC) &_tidymsi_countNonzeroColsArma, 1},
+    {"_tidymsi_countNonzeroCols", (DL_FUNC) &_tidymsi_countNonzeroCols, 1},
+    {"_tidymsi_colMediansC", (DL_FUNC) &_tidymsi_colMediansC, 1},
+    {"_tidymsi_rowMeansC", (DL_FUNC) &_tidymsi_rowMeansC, 1},
+    {"_tidymsi_normalizeTIC", (DL_FUNC) &_tidymsi_normalizeTIC, 1},
+    {"_tidymsi_nonzeroMedianC", (DL_FUNC) &_tidymsi_nonzeroMedianC, 1},
+    {"_tidymsi_rowNonzeroMediansC", (DL_FUNC) &_tidymsi_rowNonzeroMediansC, 1},
+    {"_tidymsi_normalizeNonzeroMedian", (DL_FUNC) &_tidymsi_normalizeNonzeroMedian, 1},
+    {"_tidymsi_rowMFCsC", (DL_FUNC) &_tidymsi_rowMFCsC, 2},
+    {"_tidymsi_rowMFCsC_nonzero", (DL_FUNC) &_tidymsi_rowMFCsC_nonzero, 2},
+    {"_tidymsi_normalizeMFC_nonzero", (DL_FUNC) &_tidymsi_normalizeMFC_nonzero, 2},
+    {"_tidymsi_intersampleNormTIC", (DL_FUNC) &_tidymsi_intersampleNormTIC, 2},
+    {"_tidymsi_intersampleNormMedian", (DL_FUNC) &_tidymsi_intersampleNormMedian, 2},
+    {"_tidymsi_intersampleNormMFC", (DL_FUNC) &_tidymsi_intersampleNormMFC, 2},
     {"_tidymsi_rcpparma_hello_world", (DL_FUNC) &_tidymsi_rcpparma_hello_world, 0},
     {"_tidymsi_rcpparma_outerproduct", (DL_FUNC) &_tidymsi_rcpparma_outerproduct, 1},
     {"_tidymsi_rcpparma_innerproduct", (DL_FUNC) &_tidymsi_rcpparma_innerproduct, 1},
